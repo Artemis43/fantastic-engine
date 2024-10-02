@@ -23,7 +23,7 @@
     <script>
         function checkAccess() {
             const code = document.getElementById('access-code').value;
-            const correctCode = 'your-secret-code'; // Replace with your actual code
+            const correctCode = '1234'; // Replace with your actual code
 
             if (code === correctCode) {
                 document.getElementById('access-form').style.display = 'none';
@@ -34,7 +34,7 @@
         }
 
         function loadPDF() {
-            const url = 'https://api.github.com/repos/your-username/your-repo/contents/file.pdf';
+            const url = 'https://api.github.com/repos/Artemis43/fantastic-engine/contents/file.pdf'
             fetch(url, {
                 headers: {
                     'Accept': 'application/vnd.github.v3.raw'
